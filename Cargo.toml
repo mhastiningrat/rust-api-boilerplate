@@ -1,5 +1,5 @@
 [package]
-name = "rust-api-boilerplate"
+name = "rust_api_boilerplate"
 version = "0.1.0"
 edition = "2021"
 
@@ -14,7 +14,6 @@ path = "src/main.rs"
 [dependencies]
 axum = "0.7.5"
 chrono = { version = "0.4.38", features = ["serde"] }
-dotenv = "0.15.0"
 serde = { version = "1.0.203", features = ["derive"] }
 serde_json = "1.0.117"
 sqlx = { version = "0.7.4", features = [
@@ -26,3 +25,6 @@ sqlx = { version = "0.7.4", features = [
 tokio = { version = "1.38.0", features = ["full"] }
 tower-http = { version = "0.5.2", features = ["cors"] }
 uuid = { version = "1.8.0", features = ["serde", "v4"] }
+
+dotenv = "0.15.0"
+clap = { version = "4.1.8", features = ["derive", "env"] }
