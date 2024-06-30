@@ -8,9 +8,8 @@ name = "seed"
 path = "src/scripts/seed.rs"
 
 [[bin]]
-name = "drop"
-path = "src/scripts/drop.rs"
-
+name = "main"
+path = "src/main.rs"
 
 [dependencies]
 axum = "0.7.5"
