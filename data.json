@@ -1,0 +1,126 @@
+{
+  "authors": [
+    { "firstname": "John", "lastname": "Doe" },
+    { "firstname": "Jane", "lastname": "Smith" },
+    { "firstname": "Alice", "lastname": "Johnson" },
+    { "firstname": "Bob", "lastname": "Williams" }
+  ],
+  "tags": [
+    { "name": "Technology", "slug": "technology" },
+    { "name": "Health", "slug": "health" },
+    { "name": "Science", "slug": "science" },
+    { "name": "Business", "slug": "business" }
+  ],
+  "content": [
+    {
+      "title": "Tech Innovations in 2024",
+      "slug": "tech-innovations-2024",
+      "thumbnail": "https://user-images.githubusercontent.com/6391763/90599044-ca070300-e211-11ea-8b8a-89354dd30bd5.png",
+      "image": "https://user-images.githubusercontent.com/6391763/90599044-ca070300-e211-11ea-8b8a-89354dd30bd5.png",
+      "description": "An overview of technological innovations expected in 2024.",
+      "body": "# Tech Innovations in 2024\n\n![Image](https://user-images.githubusercontent.com/6391763/90599044-ca070300-e211-11ea-8b8a-89354dd30bd5.png)\n\nThis article provides an overview of the latest technological advancements expected to make waves in 2024.",
+      "author": 1,
+      "tags": [1],
+      "published": true
+    },
+    {
+      "title": "Health Trends to Watch",
+      "slug": "health-trends-2024",
+      "thumbnail": "https://user-images.githubusercontent.com/6391763/90599044-ca070300-e211-11ea-8b8a-89354dd30bd5.png",
+      "image": "https://user-images.githubusercontent.com/6391763/90599044-ca070300-e211-11ea-8b8a-89354dd30bd5.png",
+      "description": "Upcoming health trends and innovations for 2024.",
+      "body": "# Health Trends to Watch\n\n![Image](https://user-images.githubusercontent.com/6391763/90599044-ca070300-e211-11ea-8b8a-89354dd30bd5.png)\n\nDiscover the upcoming trends in health and wellness that will dominate in 2024.",
+      "author": 2,
+      "tags": [2],
+      "published": true
+    },
+    {
+      "title": "Breakthroughs in Science",
+      "slug": "science-breakthroughs-2024",
+      "thumbnail": "https://user-images.githubusercontent.com/6391763/90599044-ca070300-e211-11ea-8b8a-89354dd30bd5.png",
+      "image": "https://user-images.githubusercontent.com/6391763/90599044-ca070300-e211-11ea-8b8a-89354dd30bd5.png",
+      "description": "Major scientific breakthroughs expected in 2024.",
+      "body": "# Breakthroughs in Science\n\n![Image](https://user-images.githubusercontent.com/6391763/90599044-ca070300-e211-11ea-8b8a-89354dd30bd5.png)\n\nExplore the major scientific discoveries and breakthroughs anticipated in 2024.",
+      "author": 3,
+      "tags": [3],
+      "published": true
+    },
+    {
+      "title": "Business Strategies for the Future",
+      "slug": "business-strategies-2024",
+      "thumbnail": "https://user-images.githubusercontent.com/6391763/90599044-ca070300-e211-11ea-8b8a-89354dd30bd5.png",
+      "image": "https://user-images.githubusercontent.com/6391763/90599044-ca070300-e211-11ea-8b8a-89354dd30bd5.png",
+      "description": "Effective business strategies to thrive in 2024.",
+      "body": "# Business Strategies for the Future\n\n![Image](https://user-images.githubusercontent.com/6391763/90599044-ca070300-e211-11ea-8b8a-89354dd30bd5.png)\n\nLearn about the effective business strategies that will help companies thrive in 2024.",
+      "author": 4,
+      "tags": [4],
+      "published": true
+    },
+    {
+      "title": "AI and the Future",
+      "slug": "ai-future-2024",
+      "thumbnail": "https://user-images.githubusercontent.com/6391763/90599044-ca070300-e211-11ea-8b8a-89354dd30bd5.png",
+      "image": "https://user-images.githubusercontent.com/6391763/90599044-ca070300-e211-11ea-8b8a-89354dd30bd5.png",
+      "description": "How AI is shaping the future of various industries.",
+      "body": "# AI and the Future\n\n![Image](https://user-images.githubusercontent.com/6391763/90599044-ca070300-e211-11ea-8b8a-89354dd30bd5.png)\n\nUnderstand the impact of AI on different industries and what the future holds.",
+      "author": 1,
+      "tags": [1, 3],
+      "published": true
+    },
+    {
+      "title": "Advancements in Medicine",
+      "slug": "advancements-medicine-2024",
+      "thumbnail": "https://user-images.githubusercontent.com/6391763/90599044-ca070300-e211-11ea-8b8a-89354dd30bd5.png",
+      "image": "https://user-images.githubusercontent.com/6391763/90599044-ca070300-e211-11ea-8b8a-89354dd30bd5.png",
+      "description": "Medical advancements expected to revolutionize healthcare.",
+      "body": "# Advancements in Medicine\n\n![Image](https://user-images.githubusercontent.com/6391763/90599044-ca070300-e211-11ea-8b8a-89354dd30bd5.png)\n\nExplore the medical advancements that are set to revolutionize healthcare in 2024.",
+      "author": 2,
+      "tags": [2],
+      "published": true
+    },
+    {
+      "title": "The Future of Renewable Energy",
+      "slug": "renewable-energy-2024",
+      "thumbnail": "https://user-images.githubusercontent.com/6391763/90599044-ca070300-e211-11ea-8b8a-89354dd30bd5.png",
+      "image": "https://user-images.githubusercontent.com/6391763/90599044-ca070300-e211-11ea-8b8a-89354dd30bd5.png",
+      "description": "Trends and innovations in renewable energy for 2024.",
+      "body": "# The Future of Renewable Energy\n\n![Image](https://user-images.githubusercontent.com/6391763/90599044-ca070300-e211-11ea-8b8a-89354dd30bd5.png)\n\nDiscover the trends and innovations in renewable energy that will shape the future.",
+      "author": 3,
+      "tags": [1, 3],
+      "published": true
+    },
+    {
+      "title": "Space Exploration Milestones",
+      "slug": "space-exploration-2024",
+      "thumbnail": "https://user-images.githubusercontent.com/6391763/90599044-ca070300-e211-11ea-8b8a-89354dd30bd5.png",
+      "image": "https://user-images.githubusercontent.com/6391763/90599044-ca070300-e211-11ea-8b8a-89354dd30bd5.png",
+      "description": "Key milestones in space exploration expected in 2024.",
+      "body": "# Space Exploration Milestones\n\n![Image](https://user-images.githubusercontent.com/6391763/90599044-ca070300-e211-11ea-8b8a-89354dd30bd5.png)\n\nLearn about the key milestones in space exploration anticipated in 2024.",
+      "author": 4,
+      "tags": [3],
+      "published": true
+    },
+    {
+      "title": "Cybersecurity Trends",
+      "slug": "cybersecurity-trends-2024",
+      "thumbnail": "https://user-images.githubusercontent.com/6391763/90599044-ca070300-e211-11ea-8b8a-89354dd30bd5.png",
+      "image": "https://user-images.githubusercontent.com/6391763/90599044-ca070300-e211-11ea-8b8a-89354dd30bd5.png",
+      "description": "Emerging trends in cybersecurity for 2024.",
+      "body": "# Cybersecurity Trends\n\n![Image](https://user-images.githubusercontent.com/6391763/90599044-ca070300-e211-11ea-8b8a-89354dd30bd5.png)\n\nStay ahead with the emerging trends in cybersecurity expected to dominate in 2024.",
+      "author": 1,
+      "tags": [1, 4],
+      "published": true
+    },
+    {
+      "title": "Educational Reforms",
+      "slug": "educational-reforms-2024",
+      "thumbnail": "https://user-images.githubusercontent.com/6391763/90599044-ca070300-e211-11ea-8b8a-89354dd30bd5.png",
+      "image": "https://user-images.githubusercontent.com/6391763/90599044-ca070300-e211-11ea-8b8a-89354dd30bd5.png",
+      "description": "Educational reforms and innovations for a better future.",
+      "body": "# Educational Reforms\n\n![Image](https://user-images.githubusercontent.com/6391763/90599044-ca070300-e211-11ea-8b8a-89354dd30bd5.png)\n\nUnderstand the educational reforms and innovations that are shaping the future of education.",
+      "author": 2,
+      "tags": [2, 4],
+      "published": true
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: homestead
+      POSTGRES_PASSWORD: homestead
+      POSTGRES_DB: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - db_postgres:/var/lib/posgressql
+
+volumes:
+  db_postgres:
