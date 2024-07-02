@@ -1,12 +1,18 @@
 use crate::config::AppConfig;
-use axum::{response::IntoResponse, routing::get, Json, Router,http::StatusCode,extract::Extension,};
-use serde::{Deserialize, Serialize};
+use axum::{response::IntoResponse,Json, Router,extract::Extension};
 use clap::Parser;
 use dotenv::dotenv;
 use std::sync::Arc;
-use sqlx::postgres::{PgPoolOptions, PgRow};
-use sqlx::{FromRow, Row};
+use sqlx::postgres::PgPoolOptions;
+
 use std::env;
+
+use crate::presentation::routes;
+
+mod domain;
+mod application;
+mod infrastructure;
+mod presentation;
 
 mod config;
 
@@ -18,13 +24,21 @@ async fn main() {
     .max_connections(5)
     .connect(&db_url)
     .await.expect("Failed to create pool.");
+    let pool = Arc::new(pool);
 
     let config = Arc::new(AppConfig::parse());
     let addr = format!("{}:{}", config.app_host, config.app_port);
 
-    let app = Router::new().route("/health", get(healthcheck))
-    .route("/getdata", get(get_contents))
-    .layer(Extension(pool));
+    // let app = Router::new().route("/health", get(healthcheck))
+    // .route("/getdata", get(get_contents))
+    // .layer(Extension(pool));
+    let author_router = routes::author_routes::author_routes(pool.clone());
+    let content_router = routes::content_routes::content_routes(pool.clone());
+
+
+    let app = Router::new()
+        .nest("/api", author_router)
+        .nest("/api", content_router);
 
     let listener = tokio::net::TcpListener::bind(&addr).await.unwrap();
     println!(
@@ -46,38 +60,4 @@ pub async fn healthcheck() -> impl IntoResponse {
     });
 
     Json(json_response)
-}
-
-#[derive(Serialize)]
-struct Contents {
-    id:i32,
-    title:String,
-    slug:String,
-    thumbnail:String,
-    image:String,
-    description:String,
-    body:String,
-}
-
-async fn get_contents(
-    Extension(pool): Extension<sqlx::PgPool>,
-) -> impl IntoResponse {
-    let users = sqlx::query_as!(
-        Contents,
-        r#"
-        SELECT id,
-        title,
-        slug,
-        thumbnail,
-        image,
-        description,
-        body
-        FROM content
-        "#
-    )
-    .fetch_all(&pool)
-    .await
-    .unwrap();
-
-    Json(users)
 }
